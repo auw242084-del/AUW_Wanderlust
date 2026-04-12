@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add New Adventure</title>
+    <style>
+        body { font-family: 'Poppins', sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+        .form-container { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); width: 350px; }
+        h2 { color: #5d3fd3; text-align: center; }
+        input, textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box; }
+        button { width: 100%; padding: 10px; background: #5d3fd3; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
+        button:hover { background: #4b32b3; }
+        .back-link { display: block; text-align: center; margin-top: 15px; color: #777; text-decoration: none; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Add Tour ✈️</h2>
+        <form method="POST">
+            <input type="text" name="title" placeholder="Destination Name (e.g. Sylhet)" required>
+            <textarea name="description" placeholder="Short description..." rows="3"></textarea>
+            <input type="text" name="budget" placeholder="Budget (e.g. 4000 BDT)" required>
+            <button type="submit">Save to Database</button>
+        </form>
+        <a href="/" class="back-link">← Back to Home</a>
+    </div>
+</body>
+</html>
